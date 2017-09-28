@@ -5,5 +5,5 @@ package hu.uni.miskolc.iit.sweng.core.model;
  */
 public enum Nationality {
 
-    US,GB,HU,DE,ES,FR
+    US,GB,HU,DE,ES,FR,IT
 }

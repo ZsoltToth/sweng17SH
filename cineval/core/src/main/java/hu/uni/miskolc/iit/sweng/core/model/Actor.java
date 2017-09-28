@@ -48,5 +48,9 @@ public class Actor {
     public void setNationality(Nationality nationality) {
         this.nationality = nationality;
     }
+
+    public boolean isAlive(){
+        return this.deathDate == null;
+    }
 }
 
