@@ -7,6 +7,11 @@
     <groupId>hu.uni.miskolc.iit.sweng</groupId>
     <artifactId>cineval-bundle</artifactId>
     <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <junit.version>4.12</junit.version>
+    </properties>
+
     <modules>
         <module>core</module>
         <module>service</module>
@@ -15,6 +20,14 @@
         <module>web</module>
     </modules>
     <packaging>pom</packaging>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+        </dependency>
+    </dependencies>
 
 
 </project>
