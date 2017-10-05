@@ -52,5 +52,18 @@ public class Actor {
     public boolean isAlive(){
         return this.deathDate == null;
     }
+
+    @Override
+    public String toString() {
+        return firstName +" " + lastName;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(!(obj instanceof  Actor)){
+            return false;
+        }
+        return firstName.equals(((Actor)obj).firstName) && lastName.equals(((Actor)obj).lastName);
+    }
 }
 

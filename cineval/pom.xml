@@ -10,6 +10,8 @@
 
     <properties>
         <junit.version>4.12</junit.version>
+        <log4j2.version>2.9.1</log4j2.version>
+        <easymock.version>3.5</easymock.version>
     </properties>
 
     <modules>
@@ -26,6 +28,17 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-iostreams</artifactId>
+            <version>${log4j2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>${log4j2.version}</version>
         </dependency>
     </dependencies>
 
